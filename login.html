@@ -75,23 +75,38 @@ span.psw {
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="card-body">
+          <form action="process.php" method="post">  
+            <div class="form-group">
+              <div class="form-label-group">
+                <input id="a"type="email" name="Email_address" class="form-control" placeholder="Email">
+                <label for="a">Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-label-group">
+                <input id="b" type="password" name="Password" class="form-control" placeholder="Password">
+                <label for="b">Password</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="remember-me">
+                  Remember Password
+                </label>
+              </div>
+            </div>
+            <button name="login" value="Login" class="btn btn-primary btn-block">Login</button>
+          </form>
+          <div class="text-center">
+            <a class="d-block small mt-3" href="register.php">Register an Account</a>
+            <a class="d-block small" href="forgot-password.php">Forgot Password?</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
 </form>
 
 </body>
